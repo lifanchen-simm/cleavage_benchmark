@@ -1,5 +1,11 @@
 # Cleavage Prediction Benchmark
 
+This repository contains the code and dataset for the paper [Proteasomal cleavage prediction: state-of-the-art and future directions](https://www.biorxiv.org/content/10.1101/2023.07.17.549305)
+
+## Abstract
+>Epitope vaccines are a promising approach for precision treatment of pathogens, cancer, autoimmune diseases, and allergies. Effectively designing such vaccines requires accurate proteasomal cleavage prediction to ensure that the epitopes included in the vaccine trigger an immune response. The performance of proteasomal cleavage predictors has been steadily improving over the past decades owing to increasing data availability and methodological advances. In this review, we summarize the current proteasomal cleavage prediction landscape and, in light of recent progress in the field of deep learning, develop and compare a wide range of recent architectures and techniques, including long short-term memory (LSTM), transformers, and convolutional neural networks (CNN), as well as four different denoising techniques. All open-source cleavage predictors re-trained on our dataset performed within two AUC percentage points. Our comprehensive deep learning architecture benchmark improved performance by 1.7 AUC percentage points, while closed-source predictors performed considerably worse. We found that a wide range of architectures and training regimes all result in very similar performance, suggesting that the specific modeling approach employed has a limited impact on predictive performance compared to the specifics of the dataset employed. We speculate that the noise and implicit nature of data acquisition techniques used for training proteasomal cleavage prediction models and the complexity of biological processes of the antigen processing pathway are the major limiting factors. While biological complexity can be tackled by more data and, to a lesser extent, better models, noise and randomness inherently limit the maximum achievable predictive performance.
+
+
 ## Repository Structure
 * `data/` holds the `.csv` and `.tsv` train, evaluation, and test files, as well as a vocabulary file
 * `params/` holds vocabulary and tokenization merges files
